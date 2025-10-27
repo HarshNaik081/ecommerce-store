@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - E-commerce Platform</title>
+</head>
+<body>
+    <h1>ShopSphere E-commerce Platform</h1>
+    <p>Welcome to ShopSphere! Your full-stack e-commerce solution.</p>
+    <p><strong>Backend running:</strong> <span id="status">Checking...</span></p>
+    <script>
+        fetch('http://localhost:5000/api/health')
+            .then(r => r.json())
+            .then(d => document.getElementById('status').textContent = 'Yes!')
+            .catch(() => document.getElementById('status').textContent = 'No - Start backend');
+    </script>
+</body>
+</html>

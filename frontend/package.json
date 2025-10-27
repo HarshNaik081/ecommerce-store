@@ -1,0 +1,19 @@
+{
+  "name": "shopsphere-frontend",
+  "version": "1.0.0",
+  "description": "ShopSphere E-commerce Frontend",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [
+    "ecommerce",
+    "frontend",
+    "shopping"
+  ],
+  "author": "ShopSphere Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
